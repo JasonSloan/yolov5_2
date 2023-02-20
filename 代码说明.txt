@@ -1,0 +1,17 @@
+一、文件说明
+    classify: 用YOLOv5的骨干网络实现分类业务
+    data: 存储配置文件
+        data/***.yaml: 数据配置文件，给定数据位置的
+        data/hyps/***.yaml: 超参数配置文件
+        data/images: 测试图像文件所在的文件夹
+        data/scripts: 脚本文件夹，主要用于下载数据(Linux环境下可运行)
+    models: 模型核心代码以及模型结构配置文件
+    segment: YOLOv5应用到图像分割业务中的训练、预测、评估代码
+    utils: 工具类代码
+    detect.py: 目标检测模型检测的相关代码
+    export.py: 将PyTorch生成的pb格式模型转换成其它格式
+    train.py: 目标检测模型训练代码
+    val.py: 目标检测模型评估代码
+===========================================
+二、代码理解
+    1. 直接运行train.py
